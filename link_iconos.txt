@@ -1,0 +1,8 @@
+gmail:
+<span class="icon-gmail"></span>
+instagram:
+<span class="icon-instagram"></span>
+whatsapp:
+<span class="icon-whatsapp"></span>
+localidad:
+<span class="icon-pinboard"></span>

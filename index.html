@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KRAFT descartables</title>
+	<meta charset="utf-8">
+	<!-- CSS Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- CSS propio -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- Tipografia Roboto Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width= device-width, initial-scale= 1">
+	<!-- Logotipos -->
+	<link rel="stylesheet" type="text/css" href="iconos.css">
+	<!-- Famicon -->
+	<link rel="shortcut icon" href="Imagenes/favicon.png">
+</head>
+<body>
+	<header>
+		<div id="marca" >
+			<img src="Imagenes/logo1.jpeg">
+		</div>
+		<nav id="bot_hamb">
+			<a onclick="menu_hamburguesa()">
+				<span class="icon-menu"></span>
+			</a>
+		</nav>
+		<nav id="botonera_principal">
+			<ul>
+				<li><a href="#catalogo">Catálogo</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#lista_de_precio" >Precios</a></li><li><a href="#redes">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="fotos_de_oferta">
+		<img src="Imagenes/portada.png" class="img_ajuste">
+	</section>
+	<section id="catalogo">
+		<nav id="catalogo_1">
+			<div id="catalogo_1a">
+				<a href="#prod_1" onmouseover="arriba('catalogo_1b')" onmouseout="sacar('catalogo_1b')">
+					<img src="Imagenes/catalogo1.png" class="img_ajuste">	
+				</a>	
+			</div>
+			<div id="catalogo_1b">
+				<p>Productos de Aluminio</p>
+			</div>
+		</nav>
+		<nav id="catalogo_2">
+			<div id="catalogo_2a">
+				<a href="#prod_2" onmouseover="arriba('catalogo_2b')" onmouseout="sacar('catalogo_2b')">
+					<img src="Imagenes/catalogo2.png" class="img_ajuste">
+				</a>
+			</div>
+			<div id="catalogo_2b">
+				<p>Bolsas Kraft y de Sulfito</p>
+			</div>
+		</nav>
+		<nav id="catalogo_3">
+			<div id="catalogo_3a">
+				<a href="#prod_3" onmouseover="arriba('catalogo_3b')" onmouseout="sacar('catalogo_3b')">
+					<img src="Imagenes/catalogo3.png" class="img_ajuste">
+				</a>
+			</div>
+			<div id="catalogo_3b">
+				<p>Bolsas Plásticas</p>
+			</div>
+		</nav>
+		<nav id="catalogo_4">
+			<div id="catalogo_4a">
+				<a href="#prod_4" onmouseover="arriba('catalogo_4b')" onmouseout="sacar('catalogo_4b')">
+					<img src="Imagenes/catalogo4.png" class="img_ajuste">
+				</a>
+			</div>
+			<div id="catalogo_4b">
+				<p>Bandejas y Cajas de Cartón</p>
+			</div>
+		</nav>
+		<nav id="catalogo_5">
+			<div id="catalogo_5a">
+				<a href="#prod_5" onmouseover="arriba('catalogo_5b')" onmouseout="sacar('catalogo_5b')">
+					<img src="Imagenes/catalogo5.png" class="img_ajuste">
+				</a>
+			</div>
+			<div id="catalogo_5b">
+				<p>Cajas con Visor</p>
+			</div>
+		</nav>
+		<nav id="catalogo_6">
+			<div id="catalogo_6a">
+				<a href="#prod_6" onmouseover="arriba('catalogo_6b')" onmouseover="achicar('img_ajuste')" onmouseout="sacar('catalogo_6b')">
+					<img src="Imagenes/catalogo6.png" class="img_ajuste">
+				</a>
+			</div>
+			<div id="catalogo_6b">
+				<p>Productos de Plástico</p>
+			</div>
+		</nav>
+	</section>
+	<section id="#productos">
+		<div class="container-fluid">
+			<div class="row" id ="prod_1">
+				<p class="txt_prod">Productos de Aluminio</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+			<div class="row" id ="prod_2">
+				<p class="txt_prod">Bolsas Kraft y de Sulfito</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+			<div class="row" id ="prod_3">
+				<p class="txt_prod">Bolsas Plásticas</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+			<div class="row" id ="prod_4">
+				<p class="txt_prod">Bandejas y Cajas de Cartón</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+			<div class="row" id ="prod_5">
+				<p class="txt_prod">Cajas con Visor</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+			<div class="row" id ="prod_6">
+				<p class="txt_prod">Productos de Plástico</p>
+				<!-- Card Bootstrap-->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja1.jpg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Emprendedora</h5>
+				        <p class="card-text">Caja sin visor. estampado "Gracias por comprarle a un Emprendedor". Medidas: 21x21x6.5cm. Color disponible: Blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja2.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja tipo Bombonera</h5>
+				        <p class="card-text">Cajas holograficas sin visor. Colores disponibles: fucsia, plateado y dorado. En su interior tiene una lámina de papel de seda. Medidas: 19x12x3cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja3.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa desmontable</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 28x21x5cm, Base color blanco y Tapa color rosa, verde agua y azul. Medidas: 25x20x8cm, Color blanco. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja4.jpeg" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja de Torta</h5>
+				        <p class="card-text">Caja con visor en tapa desmontable. Ideal para tortas, desayunos o para armar presentaciones bien voluminosas. Base color Kraft y Tapa color Blanco. Hecha con cartón reforzado, apto para recibir peso. Medidas: 25x25x12cm. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja5.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja con Tapa Bisagra</h5>
+				        <p class="card-text">Cajas con visor. Medidas: 21x17x5cm, Color kraft. Medidas:18x18x10cm, Color rosa. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col">
+				    <div class="card h-100">
+				      <img src="Imagenes/caja6.png" class="card-img-top">
+				      <div class="card-body">
+				        <h5 class="card-title txt_titulo">Caja Pan Dulce</h5>
+				        <p class="card-text">Caja con Visor para Pan Dulce de 1/2kg. Ideal para presentar tus panes dulce pero tambien para arreglos con altura. Se venden por unidad.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- FIN Card Bootstrap-->
+			</div>
+		</div>
+	</section>
+	<section id="nosotros">
+		<div id="titulo">
+			<h2>NOSOTROS</h2>
+		</div>
+		<div id="txt">
+			<p>Somos una empresa familiar que nacio bajo la necesidad de una respuesta rápida y eficiente de productos descartables en la ciudad de Pérez. Me llamo Flor, siempre tuve hambre de crecer como emprendedora. Junto a mi pareja Mati, el apoyo de mi familia y mis amigos pude empezar a transcurrir este hermoso camino.</p> 
+			<p>Mi camino laboral me lleva a poder ofrecerles una variedad de calidad y precio precisa para su negocio. Muchos confían en nosotros, GRACIAS por acompañarnos en este camino de emprender, esperamos que nos sigan eligiendo!</p>
+		</div>
+	</section>
+	<section id="lista_de_precio">
+		<div id="lista">
+		<!-- Desplegable bs-->
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+		  <div class="accordion-item">
+		    <h2 class="accordion-header" id="flush-headingOne">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+		        LISTA DE PRECIO
+		      </button>
+		    </h2>
+		    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+		      <div class="accordion-body"><strong>Aqui puede acceder a nuestra lista de precios.</strong> Haciendo click <a href="#">aqui</a> se desplegara una hoja de calculo con nuestra lista de precios actualizada.</div>
+		    </div>
+		  </div> 
+		</div>
+		<!-- FIN Desplegable bs-->	
+		</div>
+		<div id="condiciones">
+			<h3 class="text-center">¿Tenés alguna duda? Preguntanos!</h3>
+			<form>
+				<div class="container-fluid">
+					<div class="row g-3">
+						<div class="col-6">
+							<input type="text" placeholder="Nombre y Apellido" class="form-control">	
+						</div>
+						<div class="col-6">
+							<input type="email" placeholder="E-mail" class="form-control">
+						</div>
+						<div class="col-12">
+							<textarea placeholder="Consulta" class="form-control"></textarea>
+						</div>
+						<div class="col-6" class="form-control" >
+							<input type="submit" class="btn btn-light">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="informacion">
+		<div id="redes">
+			<ul>
+				<li><span class="icon-pinboard"></span>  Bat. de Salta 2383 - Pérez - Santa Fe</li>
+				<li><span class="icon-whatsapp"></span>  Tel (341) 5021033</li>
+				<li><span class="icon-gmail"></span>  kraft.consulta@gmail.com</li>
+				<li><span class="icon-instagram"></span>  kraft.perez</li>
+				<li></li>
+				<li>HORARIOS DE ATENCIÓN</li>
+				<li>Lunes a Viernes de 8:30 a 19:30 hs</li>
+				<li>Sábado de 09 a 12:30 hs</li>
+			</ul>
+		</div>
+		<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.1513945578827!2d-60.78271533033668!3d-32.99978384699942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7b28822fe567d%3A0x3460a937165d13af!2sBatalla%20de%20Salta%202383%2C%20P%C3%A9rez%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1630288682428!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="maps"></iframe>
+		</div>
+	</section>
+	<footer>
+		<div id="datos_legales">
+			<h1 class="sin_borde">KRAFT descartables</h1>
+			<h5 class="sin_borde">Todos los derechos reservados</h5>
+			<h5 id="sin_borde_2">Desarrollo FATIGA</h5>
+		</div>
+	</footer>
+	<!-- JS Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<!-- JS propio -->
+	<script type="text/javascript" src="javascript/clase8.js"></script>
+</body>
+</html>
